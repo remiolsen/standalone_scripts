@@ -204,3 +204,19 @@ zendesk_attachment_backup.py <latest_backup>.zip
 * re
 * sys
 * zipfile
+
+### update_suggestion_box.py
+Updates status (archived or not) of the suggestions stored in the database.
+Requires the settings.yaml configuration file used to parametrise genomics-status
+
+##### Usage
+```
+update_suggestion_box.py [/path/to/genomics-status.yaml]
+```
+
+##### Dependencies
+* argparse
+* couchdb
+* yaml
+* trello
+* logbook
